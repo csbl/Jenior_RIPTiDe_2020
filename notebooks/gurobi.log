@@ -1,0 +1,588 @@
+
+Gurobi 8.0.0 (linux64, Python) logging started Fri Apr 19 11:42:26 2019
+
+
+--------------------------------------------
+Warning: your license will expire in 13 days
+--------------------------------------------
+
+Academic license - for non-commercial use only
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpRvgyu0.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('4PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpeQu7pz.lp
+Reading time = 0.01 seconds
+: 467 rows, 936 columns, 4501 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpvcBNDi.lp
+Reading time = 0.03 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmp6Ebg8d.lp
+Reading time = 0.01 seconds
+: 504 rows, 1004 columns, 4853 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmprOhp1C.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpNZPlmD.lp
+Reading time = 0.01 seconds
+: 496 rows, 990 columns, 4791 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpgELyZt.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpLmZq6j.lp
+Reading time = 0.01 seconds
+: 450 rows, 900 columns, 4327 nonzeros
+
+Gurobi 8.0.0 (linux64, Python) logging started Mon Apr 22 15:40:13 2019
+
+
+--------------------------------------------
+Warning: your license will expire in 10 days
+--------------------------------------------
+
+Academic license - for non-commercial use only
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpsW_7NA.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('4PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpFSJMJ0.lp
+Reading time = 0.01 seconds
+: 467 rows, 936 columns, 4501 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpdkrlcU.lp
+Reading time = 0.03 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpaGIERZ.lp
+Reading time = 0.01 seconds
+: 504 rows, 1004 columns, 4853 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpeXM1V9.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpCzEPWL.lp
+Reading time = 0.01 seconds
+: 496 rows, 990 columns, 4791 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmp0YYvRR.lp
+Reading time = 0.03 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpXOpxQ5.lp
+Reading time = 0.01 seconds
+: 450 rows, 900 columns, 4327 nonzeros
+
+Gurobi 8.0.0 (linux64, Python) logging started Tue Apr 23 09:15:32 2019
+
+
+--------------------------------------------
+Warning: your license will expire in 9 days
+--------------------------------------------
+
+Academic license - for non-commercial use only
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpkyp9uB.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('4PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpOTZ9lq.lp
+Reading time = 0.01 seconds
+: 467 rows, 936 columns, 4501 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpqxxs0r.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmp4Zvv1p.lp
+Reading time = 0.01 seconds
+: 504 rows, 1004 columns, 4853 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpkiOcee.lp
+Reading time = 0.03 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpU90f4c.lp
+Reading time = 0.01 seconds
+: 496 rows, 990 columns, 4791 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmp635l5W.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmp2BAyi4.lp
+Reading time = 0.00 seconds
+: 450 rows, 900 columns, 4327 nonzeros
+
+Gurobi 8.0.0 (linux64, Python) logging started Wed Apr 24 10:24:02 2019
+
+
+--------------------------------------------
+Warning: your license will expire in 8 days
+--------------------------------------------
+
+Academic license - for non-commercial use only
+Read LP format model from file /tmp/tmpUXG_WZ.lp
+Reading time = 0.00 seconds
+: 14 rows, 32 columns, 64 nonzeros
+Warning: Numeric variable name in LP file ('9f928130-669c-11e9-ad33-f8633f05fb68_aux') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpuGVyuo.lp
+Reading time = 0.00 seconds
+: 9 rows, 20 columns, 51 nonzeros
+Read LP format model from file /tmp/tmpp07K1S.lp
+Reading time = 0.00 seconds
+: 14 rows, 32 columns, 64 nonzeros
+Read LP format model from file /tmp/tmptw_1nk.lp
+Reading time = 0.00 seconds
+: 13 rows, 28 columns, 75 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpVh809_.lp
+Reading time = 0.03 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('4PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmp7Ppw1C.lp
+Reading time = 0.01 seconds
+: 467 rows, 936 columns, 4501 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpS4WJJP.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpCCrqDE.lp
+Reading time = 0.01 seconds
+: 504 rows, 1004 columns, 4853 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpICRfmp.lp
+Reading time = 0.03 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmphubu34.lp
+Reading time = 0.01 seconds
+: 496 rows, 990 columns, 4791 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmp91k4xL.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpvANFMJ.lp
+Reading time = 0.00 seconds
+: 450 rows, 900 columns, 4327 nonzeros
+
+Gurobi 8.0.0 (linux64, Python) logging started Thu Apr 25 10:03:35 2019
+
+
+--------------------------------------------
+Warning: your license will expire in 7 days
+--------------------------------------------
+
+Academic license - for non-commercial use only
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpqIcvoP.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpF1zOco.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpoey1YL.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpWwxlVt.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpU6Ejg8.lp
+Reading time = 0.03 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmp2_2tzZ.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmp6CeE2m.lp
+Reading time = 0.05 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpiRnIF0.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpNMK4TP.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpXpMof7.lp
+Reading time = 0.02 seconds
+: 1777 rows, 4910 columns, 19252 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpoR9ND0.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpKM0kQq.lp
+Reading time = 0.01 seconds
+: 1777 rows, 4910 columns, 19252 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpHHvaHD.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpuk9lSQ.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpvEfXMD.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmptdUVXI.lp
+Reading time = 0.02 seconds
+: 1777 rows, 4910 columns, 19252 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpNyoQJf.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmp2wk6tc.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpWZEGWU.lp
+Reading time = 0.02 seconds
+: 1777 rows, 4908 columns, 19250 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpIv_nH9.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmps8mVNv.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+
+Gurobi 8.0.0 (linux64, Python) logging started Thu Apr 25 14:37:31 2019
+
+
+--------------------------------------------
+Warning: your license will expire in 7 days
+--------------------------------------------
+
+Academic license - for non-commercial use only
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpPdvNlI.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+
+Gurobi 8.0.0 (linux64, Python) logging started Fri Apr 26 08:01:23 2019
+
+
+--------------------------------------------
+Warning: your license will expire in 6 days
+--------------------------------------------
+
+Academic license - for non-commercial use only
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpuDZXKD.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+
+Gurobi 8.0.0 (linux64, Python) logging started Tue Apr 30 13:31:23 2019
+
+
+--------------------------------------------
+Warning: your license will expire in 2 days
+--------------------------------------------
+
+Academic license - for non-commercial use only
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpMRPDLH.lp
+Reading time = 0.01 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('4PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpMTGJaQ.lp
+Reading time = 0.01 seconds
+: 467 rows, 936 columns, 4501 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpGL0geZ.lp
+Reading time = 0.04 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpV2QBhG.lp
+Reading time = 0.01 seconds
+: 504 rows, 1004 columns, 4853 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpTA9m4P.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpvmL98W.lp
+Reading time = 0.01 seconds
+: 496 rows, 990 columns, 4791 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpLvEFuw.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmphP_LM3.lp
+Reading time = 0.00 seconds
+: 450 rows, 900 columns, 4327 nonzeros
+
+Gurobi 8.0.0 (linux64, Python) logging started Wed May  1 09:12:44 2019
+
+
+--------------------------------------------
+Warning: your license will expire in 1 days
+--------------------------------------------
+
+Academic license - for non-commercial use only
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpZWJmVO.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+
+Gurobi 8.0.0 (linux64, Python) logging started Fri May  3 14:34:19 2019
+
+
+Gurobi 8.0.0 (linux64, Python) logging started Fri May  3 14:35:21 2019
+
+
+Gurobi 8.0.0 (linux64, Python) logging started Fri May  3 14:36:13 2019
+
+
+Gurobi 8.0.0 (linux64, Python) logging started Fri May  3 14:44:39 2019
+
+
+Gurobi 8.0.0 (linux64, Python) logging started Fri May  3 15:25:32 2019
+
+
+Gurobi 8.0.0 (linux64, Python) logging started Fri May  3 15:45:16 2019
+
+
+Gurobi 8.0.0 (linux64, Python) logging started Fri May  3 15:47:20 2019
+
+
+Gurobi 8.0.0 (linux64, Python) logging started Fri May  3 15:47:24 2019
+
+
+Gurobi 8.0.0 (linux64, Python) logging started Fri May  3 15:47:52 2019
+
+
+Gurobi 8.0.0 (linux64, Python) logging started Fri May  3 15:49:22 2019
+
+Academic license - for non-commercial use only
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpxlWqo8.lp
+Reading time = 0.03 seconds
+: 1604 rows, 4716 columns, 18474 nonzeros
+
+Gurobi 8.0.0 (linux64, Python) logging started Mon May  6 10:21:43 2019
+
+Academic license - for non-commercial use only
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpe7tv0K.lp
+Reading time = 0.02 seconds
+: 1603 rows, 4715 columns, 18471 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpULV7qC.lp
+Reading time = 0.02 seconds
+: 1603 rows, 4715 columns, 18471 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpSz1QIo.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('4PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmppY9pKJ.lp
+Reading time = 0.01 seconds
+: 494 rows, 982 columns, 4751 nonzeros
+Warning: Numeric variable name in LP file ('12DGR120tipp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpFPslG3.lp
+Reading time = 0.02 seconds
+: 1805 rows, 5166 columns, 20366 nonzeros
+Warning: Numeric variable name in LP file ('3PEPTabcpp') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmpWHc1zW.lp
+Reading time = 0.01 seconds
+: 450 rows, 900 columns, 4327 nonzeros
+
+Gurobi 8.0.0 (linux64, Python) logging started Tue May  7 10:19:04 2019
+
+Academic license - for non-commercial use only
+Read LP format model from file /tmp/tmpYiLztf.lp
+Reading time = 0.00 seconds
+: 14 rows, 32 columns, 64 nonzeros
+Read LP format model from file /tmp/tmpCIU594.lp
+Reading time = 0.00 seconds
+: 14 rows, 32 columns, 64 nonzeros
+Read LP format model from file /tmp/tmpYadWE7.lp
+Reading time = 0.00 seconds
+: 14 rows, 32 columns, 64 nonzeros
+Warning: Numeric variable name in LP file ('62835578-70d3-11e9-904f-f8633f05fb68_aux') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file /tmp/tmp6tXU7n.lp
+Reading time = 0.00 seconds
+: 9 rows, 20 columns, 51 nonzeros
+Read LP format model from file /tmp/tmp6R4GqC.lp
+Reading time = 0.00 seconds
+: 14 rows, 32 columns, 64 nonzeros
+Read LP format model from file /tmp/tmpHUy1oN.lp
+Reading time = 0.00 seconds
+: 13 rows, 28 columns, 75 nonzeros
+Read LP format model from file /tmp/tmpyJOH5u.lp
+Reading time = 0.00 seconds
+: 14 rows, 32 columns, 64 nonzeros
+Read LP format model from file /tmp/tmpjqlzcN.lp
+Reading time = 0.00 seconds
+: 14 rows, 32 columns, 64 nonzeros
