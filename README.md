@@ -10,17 +10,17 @@ The metabolic responses of bacteria to dynamic extracellular conditions drives n
 	|- README          		# the top level description of content
 	|- LICENSE         		# the license for this project
 	|
-	|- doc/					# additional documents associated with the study
+	|- doc/				# additional documents associated with the study
 	|
 	|- data/          		# raw and primary data
-	| |- /reconstructions	# genome-scale metabolic network reconstructions
+	| |- /reconstructions		# genome-scale metabolic network reconstructions
 	| |- /flux_samples		# results from contextualized flux sampling of GENREs
 	| |- /transcript		# mapped transcript abundances
 	| +- /metabolome		# results from untargeted LCMS analysis
 	|
-	|- code/				# all programmatic code (python & R)
+	|- code/			# all programmatic code (python & R)
 	|
-	|- results/				# all output from workflows and analyses
+	|- results/			# all output from workflows and analyses
 	| |- figures/			# manuscript figures
 	| +- tables/			# supplementary tables
 	|
