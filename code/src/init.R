@@ -24,28 +24,6 @@ set.seed(8619)
 
 #-----------------#
 
-# Set input data location string variables
-# Metadata
-metadata <- 'data/metadata.tsv'
-# 16S
-shared <- 'data/16S/cdf_models.opti_mcc.0.03.shared'
-tax <- 'data/16S/cdf_models.opti_mcc.0.03.cons.format.taxonomy'
-
-# Set output plot location string variables
-fig1Plot <- 'results/figures/figure_1.pdf'
-
-# Set color palette
-heat_palette <- viridis(n=150)
-resistant_col <- '#ec4902'
-susceptible_col <- '#000054ff'
-
-strep_col <- 'mediumblue'
-cef_col <- 'red2'
-clinda_col <- 'limegreen'
-noabx_col <- 'aquamarine2'
-
-#-----------------#
-
 # Define frequently used functions
 
 # Merge 2 matrices with shared row names
