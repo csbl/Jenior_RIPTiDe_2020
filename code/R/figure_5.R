@@ -453,7 +453,7 @@ m9_an_points <- subset(samples_pcoa_points, media == 'm9_anaerobic')
 
 # Generate figure
 library(scales)
-png(filename='~/Desktop/repos/Jenior_RIPTiDe_2019/results/figures/figure_5.png', units='in', width=7, height=8, res=300)
+png(filename='~/Desktop/repos/Jenior_RIPTiDe_2019/results/figures/figure_5_test.png', units='in', width=7, height=8, res=300)
 #pdf(file='~/Desktop/repos/Jenior_RIPTiDe_2019/results/figure_5.pdf', width=7, height=8)
 layout(matrix(c(1,1,2,2,2,
                 3,3,4,4,4), nrow=2, ncol=5, byrow=TRUE))
@@ -463,18 +463,13 @@ par(mar=c(4,4,1.5,1), las=1, mgp=c(2.6,1,0), xaxs='i', yaxs='i', lwd=2)
 hist(transcription, main='', xlim=c(0,400), ylim=c(0,800), breaks=200, col='firebrick',
      xlab=as.expression(bquote(paste(italic('In vivo'),' Transcript Density',sep=''))), 
      ylab='Gene Frequency', cex.lab=1.2, lwd=2)
-abline(v=cutoffs, lty=3, lwd=2)
-#text(x=c(44.78,97.4735,116.2366,157.8262,294.2821), 
-#     y=780, labels=c('5','4','3','2','1'), cex=0.75)
-mtext(text=c('5','4','3','2','1'), side=3, at=c(44.78,97.4735,116.2366,157.8262,294.2821), cex=0.8)
-#arrows(x0=330, x1=375, y0=780, lwd=2, length=0.05)
-legend('right', pt.cex=0, bty='n',
-       legend=c(as.expression(bquote(bold('Genes (Reactions)\nin ranges:'))),
-                as.expression(bquote(paste(bold('1:'),' 518 (140)', sep=''))), # add reactions totals
-                as.expression(bquote(paste(bold('2:'),' 517 (185)', sep=''))),
-                as.expression(bquote(paste(bold('3:'),' 518 (658)', sep=''))),
-                as.expression(bquote(paste(bold('4:'),' 517 (244)', sep=''))),
-                as.expression(bquote(paste(bold('5:'),' 2070 (1130)', sep='')))))
+
+# Color axis labels instead of a legend
+
+legend('topright', legend=c('M9 aerobic','M9 anaerobic'), 
+       pt.bg=c('firebrick','royalblue3'), pch=21, pt.cex=2, pt.lwd=1.5, cex=1.1, bty='n')
+
+
 box(lwd=2)
 mtext('A',side=3, padj=0.5, cex=1.2, font=2, at=-80)
 

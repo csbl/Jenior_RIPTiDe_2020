@@ -1,0 +1,116 @@
+
+0.1
+Initializing model and integrating transcriptomic data...
+Pruning zero flux subnetworks...
+Analyzing context-specific flux distributions...
+
+Reactions pruned to 445 from 2583 (82.77% change)
+Metabolites pruned to 451 from 1805 (75.01% change)
+Flux through the objective DECREASED to ~20.38 from ~105.77 (80.73% change)
+Contextualized metabolism has a concordancy of 39.0% (p<0.001) with the transcriptome
+
+RIPTiDe completed in 37 seconds
+
+
+0.2
+Initializing model and integrating transcriptomic data...
+Pruning zero flux subnetworks...
+Analyzing context-specific flux distributions...
+
+Reactions pruned to 446 from 2583 (82.73% change)
+Metabolites pruned to 451 from 1805 (75.01% change)
+Flux through the objective DECREASED to ~21.99 from ~105.77 (79.21% change)
+Contextualized metabolism has a concordancy of 38.6% (p<0.001) with the transcriptome
+
+RIPTiDe completed in 36 seconds
+
+
+0.3
+Initializing model and integrating transcriptomic data...
+Pruning zero flux subnetworks...
+Analyzing context-specific flux distributions...
+
+Reactions pruned to 442 from 2583 (82.89% change)
+Metabolites pruned to 447 from 1805 (75.24% change)
+Flux through the objective DECREASED to ~32.54 from ~105.77 (69.24% change)
+Contextualized metabolism has a concordancy of 37.6% (p<0.001) with the transcriptome
+
+RIPTiDe completed in 36 seconds
+
+
+0.4
+Initializing model and integrating transcriptomic data...
+Pruning zero flux subnetworks...
+Analyzing context-specific flux distributions...
+
+Reactions pruned to 441 from 2583 (82.93% change)
+Metabolites pruned to 446 from 1805 (75.29% change)
+Flux through the objective DECREASED to ~45.52 from ~105.77 (56.96% change)
+Contextualized metabolism has a concordancy of 35.5% (p<0.001) with the transcriptome
+
+RIPTiDe completed in 36 seconds
+
+
+0.5
+Initializing model and integrating transcriptomic data...
+Pruning zero flux subnetworks...
+Analyzing context-specific flux distributions...
+
+Reactions pruned to 451 from 2583 (82.54% change)
+Metabolites pruned to 455 from 1805 (74.79% change)
+Flux through the objective DECREASED to ~56.28 from ~105.77 (46.79% change)
+Contextualized metabolism has a concordancy of 36.4% (p<0.001) with the transcriptome
+
+RIPTiDe completed in 37 seconds
+
+
+0.6
+Initializing model and integrating transcriptomic data...
+Pruning zero flux subnetworks...
+Analyzing context-specific flux distributions...
+
+Reactions pruned to 453 from 2583 (82.46% change)
+Metabolites pruned to 454 from 1805 (74.85% change)
+Flux through the objective DECREASED to ~62.7 from ~105.77 (40.72% change)
+Contextualized metabolism has a concordancy of 37.4% (p<0.001) with the transcriptome
+
+RIPTiDe completed in 54 seconds
+
+
+0.7
+Initializing model and integrating transcriptomic data...
+Pruning zero flux subnetworks...
+Analyzing context-specific flux distributions...
+
+Reactions pruned to 463 from 2583 (82.08% change)
+Metabolites pruned to 462 from 1805 (74.4% change)
+Flux through the objective DECREASED to ~75.81 from ~105.77 (28.33% change)
+Contextualized metabolism has a concordancy of 35.0% (p<0.001) with the transcriptome
+
+RIPTiDe completed in 37 seconds
+
+
+0.8
+Initializing model and integrating transcriptomic data...
+Pruning zero flux subnetworks...
+Analyzing context-specific flux distributions...
+
+Reactions pruned to 485 from 2583 (81.22% change)
+Metabolites pruned to 481 from 1805 (73.35% change)
+Flux through the objective DECREASED to ~85.9 from ~105.77 (18.79% change)
+Contextualized metabolism has a concordancy of 33.9% (p<0.001) with the transcriptome
+
+RIPTiDe completed in 1 minutes and 2 seconds
+
+
+0.9
+Initializing model and integrating transcriptomic data...
+Pruning zero flux subnetworks...
+Analyzing context-specific flux distributions...
+
+Reactions pruned to 524 from 2583 (79.71% change)
+Metabolites pruned to 516 from 1805 (71.41% change)
+Flux through the objective DECREASED to ~94.7 from ~105.77 (10.47% change)
+Contextualized metabolism has a concordancy of 16.9% (p<0.001) with the transcriptome
+
+RIPTiDe completed in 1 minutes and 8 seconds
