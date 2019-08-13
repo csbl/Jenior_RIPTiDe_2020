@@ -15,19 +15,19 @@ small_sample <- sample(c(1:10000), 100, replace=FALSE)
 large_sample <- sample(c(1:10000), 300, replace=FALSE)
 
 # Load in  and format data
-lb_aerobic_samples <- read.delim(file='/home/mjenior/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/LB_aerobic.flux_samples.format.tsv', sep='\t', header=TRUE)
+lb_aerobic_samples <- read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/LB_aerobic.flux_samples.format.tsv', sep='\t', header=TRUE)
 colnames(lb_aerobic_samples) <- make.names(colnames(lb_aerobic_samples))
 lb_aerobic_samples <- lb_aerobic_samples[small_sample,]
 lb_aerobic_samples$BIOMASS_Ec_iJO1366_WT_53p95M <- NULL
 lb_aerobic_samples$condition <- 'in vitro'
 
-m9_aerobic_samples <- read.delim(file='/home/mjenior/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/M9_aerobic.flux_samples.format.tsv', sep='\t', header=TRUE)
+m9_aerobic_samples <- read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/M9_aerobic.flux_samples.format.tsv', sep='\t', header=TRUE)
 colnames(m9_aerobic_samples) <- make.names(colnames(m9_aerobic_samples))
 m9_aerobic_samples <- m9_aerobic_samples[small_sample,]
 m9_aerobic_samples$BIOMASS_Ec_iJO1366_WT_53p95M <- NULL
 m9_aerobic_samples$condition <- 'in vitro'
 
-m9_anaerobic_samples <- read.delim(file='/home/mjenior/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/M9_anaerobic.flux_samples.format.tsv', sep='\t', header=TRUE)
+m9_anaerobic_samples <- read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/M9_anaerobic.flux_samples.format.tsv', sep='\t', header=TRUE)
 colnames(m9_anaerobic_samples) <- make.names(colnames(m9_anaerobic_samples))
 m9_anaerobic_samples <- m9_anaerobic_samples[small_sample,]
 m9_anaerobic_samples$BIOMASS_Ec_iJO1366_WT_53p95M <- NULL
@@ -74,7 +74,7 @@ rownames(invitro_samples) <- rownames(invitro_metadata)
 rm(lb_aerobic_samples, m9_aerobic_samples, m9_anaerobic_samples)
 
 # Load and format in vivo samples
-invivo_samples <- read.delim(file='/home/mjenior/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/clinda_k12.flux_samples.format.tsv', sep='\t', header=TRUE)
+invivo_samples <- read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/clinda_k12.flux_samples.format.tsv', sep='\t', header=TRUE)
 colnames(invivo_samples) <- make.names(colnames(invivo_samples))
 invivo_samples <- invivo_samples[large_sample,]
 invivo_samples$BIOMASS_Ec_iJO1366_WT_53p95M <- NULL
@@ -150,7 +150,7 @@ library(scales)
 library(randomForest)
 
 # Load and format samples
-pfba_samples <- read.delim(file='/home/mjenior/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/pFBA.flux_samples.format.tsv', sep='\t', header=TRUE, row.names=1)
+pfba_samples <- read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/pFBA.flux_samples.format.tsv', sep='\t', header=TRUE, row.names=1)
 colnames(pfba_samples) <- make.names(colnames(pfba_samples))
 pfba_samples <- pfba_samples[large_sample,]
 pfba_samples$BIOMASS_Ec_iJO1366_WT_53p95M <- NULL
@@ -246,14 +246,13 @@ rm(rf_obj, rf_feat, condition, all_samples2, n_trees, m_tries)
 # Load in data
 transcription <- read.delim('~/Desktop/repos/Jenior_RIPTiDe_2019/data/transcript/clinda_k12.mapped.norm.tsv', header=TRUE, row.names=1)
 transcription <- transcription$normDepth
-cutoffs <- as.vector(quantile(transcription, probs=c(0.5,0.625,0.75,0.875)))
 
 # Pick which samples will be taken
 sub_sample <- sample(c(1:10000), 500, replace=FALSE)
 
 # Focus final analyses on LB vs in vivo 
 # Load in data and perform basic formatting
-lb_aerobic_samples <- read.delim(file='/home/mjenior/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/LB_aerobic.flux_samples.format.tsv', sep='\t', header=TRUE, row.names=1)
+lb_aerobic_samples <- read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/LB_aerobic.flux_samples.format.tsv', sep='\t', header=TRUE, row.names=1)
 colnames(lb_aerobic_samples) <- make.names(colnames(lb_aerobic_samples))
 lb_aerobic_samples <- lb_aerobic_samples[sub_sample,]
 lb_aerobic_samples <- as.data.frame(apply(lb_aerobic_samples, 2, as.numeric))
@@ -277,7 +276,7 @@ lb_aerobic_samples$DM_mththf_c <- NULL # Remove intracellular demand reaction
 #m9_anaerobic_samples$BIOMASS_Ec_iJO1366_WT_53p95M <- NULL
 #m9_anaerobic_samples$DM_mththf_c <- NULL # Remove intracellular demand reaction
 
-invivo_samples <- read.delim(file='/home/mjenior/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/clinda_k12.flux_samples.format.tsv', sep='\t', header=TRUE, row.names=1)
+invivo_samples <- read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/clinda_k12.flux_samples.format.tsv', sep='\t', header=TRUE, row.names=1)
 colnames(invivo_samples) <- make.names(colnames(invivo_samples))
 invivo_samples <- invivo_samples[sub_sample,]
 invivo_samples <- as.data.frame(apply(invivo_samples, 2, as.numeric))
@@ -463,13 +462,6 @@ par(mar=c(4,4,1.5,1), las=1, mgp=c(2.6,1,0), xaxs='i', yaxs='i', lwd=2)
 hist(transcription, main='', xlim=c(0,400), ylim=c(0,800), breaks=200, col='firebrick',
      xlab=as.expression(bquote(paste(italic('In vivo'),' Transcript Density',sep=''))), 
      ylab='Gene Frequency', cex.lab=1.2, lwd=2)
-
-# Color axis labels instead of a legend
-
-legend('topright', legend=c('M9 aerobic','M9 anaerobic'), 
-       pt.bg=c('firebrick','royalblue3'), pch=21, pt.cex=2, pt.lwd=1.5, cex=1.1, bty='n')
-
-
 box(lwd=2)
 mtext('A',side=3, padj=0.5, cex=1.2, font=2, at=-80)
 
