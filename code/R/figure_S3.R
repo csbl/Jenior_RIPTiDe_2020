@@ -114,12 +114,11 @@ flux_medians <- c(12.925909821912455, 552.0385670273639, 0.04009544971415835, 52
 cor.test(x=coefficients, y=flux_medians, method='spearman')
 
 png(filename='~/Desktop/repos/Jenior_RIPTiDe_2019/results/figures/figure_S3.png', units='in', width=7, height=5, res=300)
-par(mar=c(4,4,1,1), xpd=FALSE, las=1, mgp=c(3,0.7,0))
-plot(x=coefficients, y=flux_medians, xlab='Linear Coefficient', ylab='Median Sampled Flux', pch=21, cex=2, bg='firebrick')
+par(mar=c(4,4,1,1), xpd=FALSE, las=1, mgp=c(2.8,0.7,0))
+plot(x=coefficients, y=flux_medians, xlim=c(0,1), ylim=c(0,1000),
+     xlab='Linear Coefficient', ylab='Median Sampled Flux', 
+     pch=21, cex=2, bg='firebrick')
 box(lwd=2)
 abline(lm(flux_medians~coefficients), lwd=3)
 legend('center', legend=c('rho=0.261', 'p=1.7e-08'), cex=2, pt.cex=0, bty='n')
 dev.off()
-
-
-     
