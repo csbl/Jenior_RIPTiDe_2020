@@ -99,9 +99,8 @@ all_samples <- as.data.frame(t(all_samples))
 all_metadata <- as.data.frame(rbind(invivo_metadata, invitro_metadata))
 rm(invivo_metadata, invitro_metadata)
 
-
-mod <- rda(all_samples, scale = TRUE)
-biplot(mod, scaling = 3, type = c("text", "points"))
+#mod <- rda(all_samples, scale = TRUE)
+#biplot(mod, scaling = 3, type = c("text", "points"))
 
 # Transform data due to negative values and calculate axes
 all_samples <- all_samples + max(all_samples)
