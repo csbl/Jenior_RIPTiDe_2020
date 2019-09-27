@@ -464,7 +464,7 @@ hist(transcription, main='', xlim=c(0,400), ylim=c(0,800), breaks=200, col='fire
 box(lwd=2)
 legend('topright', legend=c('Context-Specific Model','Reactions: 452', 'Metabolites: 453', 'Biomass Flux: 17.74%↓'), cex=1.2, pt.cex=0, bty='n')
 mtext('A',side=3, padj=0.5, cex=1.2, font=2, at=-80)
-dev.off()
+
 # B
 par(mar=c(4,4,1,1.5), las=1, mgp=c(2.2,0.75,0))
 plot(x=samples_pcoa_points[,2], y=samples_pcoa_points[,1], xlim=c(-0.011,0.011), ylim=c(-0.014,0.014),
