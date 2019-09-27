@@ -11,7 +11,7 @@ library(plotrix)
 #------------------------------------------------------------------------------
 
 # Load in data and format
-growth_rates <- as.data.frame(t(read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/new_growth_rates.tsv', sep='\t', header=FALSE, row.names=1)))
+growth_rates <- as.data.frame(t(read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/new_growth_rates2.tsv', sep='\t', header=FALSE, row.names=1)))
 base_pfba <- as.numeric(growth_rates$base_pfba)
 base_pfba  <- base_pfba[!is.na(base_pfba)]
 lb_aerobic <- as.numeric(growth_rates$lb_aerobic)
@@ -21,7 +21,7 @@ m9_gluc_aerobic  <- m9_gluc_aerobic[!is.na(m9_gluc_aerobic)]
 m9_gluc_anaerobic <- as.numeric(growth_rates$m9_gluc_anaerobic)
 m9_gluc_anaerobic  <- m9_gluc_anaerobic[!is.na(m9_gluc_anaerobic)]
 rm(growth_rates)
-unconstrained <- read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/unconstrained_growth_rates.tsv', header=FALSE)[,1]
+unconstrained <- read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/growth_rates/unconstrained_growth_rates.tsv', header=FALSE)[,1]
 sub_sample <- sample(c(1:length(unconstrained)), length(m9_gluc_anaerobic), replace=FALSE)
 unconstrained <- unconstrained[sub_sample]
 unconstrained <- unconstrained[!is.na(unconstrained)]
@@ -64,7 +64,7 @@ vioplot(base_pfba, at=2, col='#b2b2b1', lwd=2, drawRect=FALSE, add=TRUE)
 vioplot(lb_aerobic, at=3.5, col='chocolate2', lwd=2, drawRect=FALSE, add=TRUE)
 vioplot(m9_gluc_aerobic, at=4.5, col='blue3', lwd=2, drawRect=FALSE, add=TRUE)
 vioplot(m9_gluc_anaerobic, at=5.5, col='white', lwd=2, drawRect=FALSE, add=TRUE)
-mtext(c('Unconstrained\niJO1366','pFBA','LB\nAerobic','M9+glc\nAerobic','M9+glc\nAnaerobic'), 
+mtext(c('Unconstrained\niJO1366','Maximum\nPasimony','LB\nAerobic','M9 + glc\nAerobic','M9 + glc\nAnaerobic'), 
       side=1, at=c(0.8,2,3.5,4.5,5.5), padj=1, cex=c(0.8,1,1,1,1))
 
 # LB

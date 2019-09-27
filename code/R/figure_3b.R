@@ -2,7 +2,7 @@
 library(gplots)
 
 # Load in data
-essential <- as.data.frame(t(read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/essentiality.tsv', sep='\t', header=TRUE, row.names=1)))
+essential <- as.data.frame(t(read.delim(file='~/Desktop/repos/Jenior_RIPTiDe_2019/data/essentiality_test2.tsv', sep='\t', header=TRUE, row.names=1)))
 
 # Assess differential groups of essentiality
 test <- as.data.frame(t(essential))
@@ -48,7 +48,7 @@ rownames(essential) <- genres
 rm(genres)
 
 # Generate figure
-png(filename='/home/mjenior/Desktop/repos/Jenior_RIPTiDe_2019/results/figures/essentiality.png', 
+png(filename='/home/mjenior/Desktop/repos/Jenior_RIPTiDe_2019/results/figures/essentiality2.png', 
     units='in', width=6, height=4, res=100)
 heatmap.2(essential, col=c('black','white','forestgreen'), dendrogram='none', density.info='none', 
           trace='none', key=FALSE, margins=c(1,1), Rowv=FALSE, sepwidth=c(0.05,0.01), 

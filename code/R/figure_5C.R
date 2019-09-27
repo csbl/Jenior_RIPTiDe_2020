@@ -61,7 +61,6 @@ exchange_rxns <- c(colnames(invivo_exchanges), colnames(lb_exchanges))
 exchange_cpds <- c(rev(c("L-Asparagine", "D-Glucose 6-phosphate", "L-Methionine S-oxide", "Nitrite", "Thymidine")),
                    rev(c("Deoxyuridine", "L-methionine", "Nitrate", "L-valine")))
 
-
 # Generate figure
 png(filename='~/Desktop/repos/Jenior_RIPTiDe_2019/results/figures/figure_5C.png', 
     units='in', width=5, height=6, res=300)
@@ -79,6 +78,6 @@ segments(x0=exch_q25, x1=exch_q75, y0=c(0.38:length(exchange_cpds)+0.38))
 abline(h=4.25)
 text(x=c(8.5,9), y=c(9.2, 3.95), labels=c(as.expression(bquote(italic('in vivo'))),'LB'), cex=1.1)
 par(xpd=TRUE)
-text(x=10.75, y=5.5, 'Context-specific Growth Substrates', srt=270)
+text(x=10.5, y=4.5, 'Context-specific Growth Substrates', srt=270)
 dev.off()
 
