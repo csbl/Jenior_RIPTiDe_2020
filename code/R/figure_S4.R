@@ -5,37 +5,39 @@ gc()
 
 # Flux sampling files
 lb_samples <- '~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/media_conditions/LB_aerobic.flux_samples.tsv'
-invivo_samples <- '~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/media_conditions/invivo.flux_samples.tsv'
+m9_samples <- '~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/media_conditions/M9_aerobic.flux_samples.tsv'
 
 # Read in data
 lb_samples <- read.delim(lb_samples, sep='\t', header=TRUE)
-invivo_samples <- read.delim(invivo_samples, sep='\t', header=TRUE)
+m9_samples <- read.delim(m9_samples, sep='\t', header=TRUE)
+
+m9_samples <- read.delim(m9_samples, sep='\t', header=TRUE)
 
 # Format data
-overlap <- intersect(colnames(lb_samples), colnames(invivo_samples))
+overlap <- intersect(colnames(lb_samples), colnames(m9_samples))
 lb_samples <- lb_samples[, overlap]
-invivo_samples <- invivo_samples[, overlap]
+m9_samples <- m9_samples[, overlap]
 rm(overlap)
 
 # Subset data
-#sub_sample <- sample(1:500, 250, replace=FALSE)
-#lb_samples <- lb_samples[sub_sample,]
-#invivo_samples <- invivo_samples[sub_sample,]
-#rm(sub_sample)
+sub_sample <- sample(1:500, 250, replace=FALSE)
+lb_samples <- lb_samples[sub_sample,]
+m9_samples <- m9_samples[sub_sample,]
+rm(sub_sample)
 
 # Reduce data by sizes of median difference
 #lb_med <- apply(lb_samples, 2, median)
-#invivo_med <- apply(invivo_samples, 2, median)
-#diffs <- abs(lb_med - invivo_med)
+#m9_med <- apply(m9_samples, 2, median)
+#diffs <- abs(lb_med - m9_med)
 #diffs <- names(subset(diffs, diffs > 0.0))
 #lb_samples <- lb_samples[, diffs]
-#invivo_samples <- invivo_samples[, diffs]
+#m9_samples <- m9_samples[, diffs]
 #rm(diffs)
 
 # Merge data
 lb_samples$condition <- 1
-invivo_samples$condition <- 0
-all_samples <- rbind(lb_samples, invivo_samples)
+m9_samples$condition <- 0
+all_samples <- rbind(lb_samples, m9_samples)
 all_samples$condition <- as.factor(all_samples$condition)
 
 # Run AUCRF and obtain feature lists
@@ -60,15 +62,15 @@ rxn_names <- c("Putrescine\ntransport", "Ribose-5-phosphate\nisomerase",
 
 # Subset flux samples to top reactions
 lb_samples <- lb_samples[, rxn_ids]
-invivo_samples <- invivo_samples[, rxn_ids]
+m9_samples <- m9_samples[, rxn_ids]
 
 # Transform values with respect to sign
-for (y in 1:ncol(invivo_samples)) {
-  for (x in 1:nrow(invivo_samples)) {
-    if (invivo_samples[x,y] < 0.0) {
-      invivo_samples[x,y] <- log2(abs(invivo_samples[x,y]) + 1) * -1
+for (y in 1:ncol(m9_samples)) {
+  for (x in 1:nrow(m9_samples)) {
+    if (m9_samples[x,y] < 0.0) {
+      m9_samples[x,y] <- log2(abs(m9_samples[x,y]) + 1) * -1
     } else {
-      invivo_samples[x,y] <- log2(invivo_samples[x,y] + 1)
+      m9_samples[x,y] <- log2(m9_samples[x,y] + 1)
     }
     
     if (lb_samples[x,y] < 0.0) {
@@ -83,14 +85,15 @@ for (y in 1:ncol(invivo_samples)) {
 lb_q25 <- apply(lb_samples, 2, function(x) as.numeric(quantile(x, probs=0.25)))
 lb_med <- apply(lb_samples, 2, median)
 lb_q75 <- apply(lb_samples, 2, function(x) as.numeric(quantile(x, probs=0.75)))
-invivo_q25 <- apply(invivo_samples, 2, function(x) as.numeric(quantile(x, probs=0.25)))
-invivo_med <- apply(invivo_samples, 2, median)
-invivo_q75 <- apply(invivo_samples, 2, function(x) as.numeric(quantile(x, probs=0.75)))
-rxn_medians <- rbind(invivo_med, lb_med)
-rm(invivo_med, lb_med)
+m9_q25 <- apply(m9_samples, 2, function(x) as.numeric(quantile(x, probs=0.25)))
+m9_med <- apply(m9_samples, 2, median)
+m9_q75 <- apply(m9_samples, 2, function(x) as.numeric(quantile(x, probs=0.75)))
+rxn_medians <- rbind(m9_med, lb_med)
+rm(m9_med, lb_med)
 
 # Generate figure
-png(filename='~/Desktop/repos/Jenior_RIPTiDe_2019/results/figures/figure_S4.png', units='in', width=12, height=6, res=300)
+png(filename='~/Desktop/repos/Jenior_RIPTiDe_2019/results/figures/figure_S4.png', 
+    units='in', width=12, height=6, res=300)
 par(mar=c(6,4,1.5,1.5), las=1, mgp=c(1.8,0.7,0), xpd=FALSE, lwd=2)
 plot(0, type='n', ylim=c(-10,10), xlim=c(1,17.6), 
      ylab='Reaction Flux', xlab='', xaxt='n', cex.lab=1.4)
@@ -100,7 +103,7 @@ legend('topleft', legend=c(as.expression(bquote(italic('in vivo'))),'LB'),
        pt.bg=c('firebrick','#ffa05d'), pch=22, pt.cex=2.3, bty='n', pt.lwd=1.5)
 barplot(rxn_medians, col=c('firebrick','#ffa05d'), beside=TRUE, add=TRUE, 
         width=0.6, space=c(0,1), xaxt='n', yaxt='n')
-segments(x0=seq(1.2,17.4,1.8)-0.3, y0=invivo_q25, y1=invivo_q75, lwd=2) 
+segments(x0=seq(1.2,17.4,1.8)-0.3, y0=m9_q25, y1=m9_q75, lwd=2) 
 segments(x0=seq(1.2,17.4,1.8)+0.3, y0=lb_q25, y1=lb_q75, lwd=2)
 box(lwd=2)
 par(xpd=TRUE)
