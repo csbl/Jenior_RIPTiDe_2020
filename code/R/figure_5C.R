@@ -66,7 +66,7 @@ png(filename='~/Desktop/repos/Jenior_RIPTiDe_2019/results/figures/figure_5C.png'
     units='in', width=5, height=6, res=300)
 par(mar=c(3.5,9,1,1.5), las=1, mgp=c(1.9,0.7,0), lwd=2, xaxs='i', yaxs='i')
 plot(0, type='n', xaxt='n', yaxt='n', xlim=c(0,10), ylim=c(0,length(exchange_cpds)+0.5), 
-     xlab='Inv. Norm. Exchange Flux', ylab='', cex.lab=1.1)
+     xlab=expression(paste('Inverse Exchange Flux (log'['2'],')')), ylab='', cex.lab=1.1)
 axis(1, at=c(0,5,10), labels=c('0','30','1000'), lwd=2)
 minors <- c(1.5,2.5,3.3,3.9,4.3,4.6,4.8)
 axis(1, at=minors, labels=rep('', length(minors)), lwd=1, tck=-0.03)
