@@ -147,6 +147,6 @@ points(x=m9_aerobic_pcoa_points[,2], y=m9_aerobic_pcoa_points[,1], bg=alpha('#41
 points(x=m9_anaerobic_pcoa_points[,2], y=m9_anaerobic_pcoa_points[,1], bg=alpha('white',0.75), pch=21, cex=2.4, lwd=1.5)
 legend('topleft', legend=c(as.expression(bquote(italic('In vivo'))),'LB aerobic','M9 aerobic','M9 anaerobic'), 
        pt.bg=c('firebrick','#ffa05d','#4145ba','white'), pch=21, pt.cex=2, pt.lwd=1.5, cex=1.1, bty='n')
-legend('bottomright', legend='Flux Distributions of Shared Reactions', cex=0.9, pt.cex=0, bty='n')
+legend('bottomright', legend='Shared Reaction Flux Dissimilarity', cex=0.9, pt.cex=0, bty='n')
 box(lwd=2)
 dev.off()
