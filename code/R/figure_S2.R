@@ -1,5 +1,7 @@
 
-
+# Start with clean environment
+rm(list=ls())
+gc()
 
 # Select files
 metabolome <- '~/Desktop/repos/Jenior_RIPTiDe_2019/data/metabolome/scaled_intensities.log10.tsv'
@@ -73,6 +75,7 @@ segments(x0=c(0.75,1.75), x1=c(1.25,2.25),
          lwd=3)
 mtext(c('Clindamycin','No Antibiotics'), side=1, at=c(1,2), padj=1)
 mtext('A', side=3, padj=0.5, cex=1.2, font=2, at=-0.1)
+text(x=2, y=2.75, labels='*', font=2, cex=1.7)
 box(lwd=2)
 
 # deoxyuridine
@@ -90,6 +93,7 @@ segments(x0=c(0.75,1.75), x1=c(1.25,2.25),
          lwd=3)
 mtext(c('Clindamycin','No Antibiotics'), side=1, at=c(1,2), padj=1)
 mtext('B', side=3, padj=0.5, cex=1.2, font=2, at=-0.1)
+text(x=2, y=7.4, labels='***', font=2, cex=1.7)
 box(lwd=2)
 
 # methionine
@@ -103,10 +107,10 @@ legend('topright', legend='Methionine', pt.cex=0, cex=1.1, bty='n')
 legend('topleft', legend=methionine_pval, pt.cex=0, bty='n')
 segments(x0=c(0.75,1.75), x1=c(1.25,2.25),
          y0=c(median(subset(methionine, abx=='clindamycin')[,2]),
-              median(subset(methionine, abx=='none')[,2])), 
-         lwd=3)
+              median(subset(methionine, abx=='none')[,2])), lwd=3)
 mtext(c('Clindamycin','No Antibiotics'), side=1, at=c(1,2), padj=1)
 mtext('C', side=3, padj=0.5, cex=1.2, font=2, at=-0.1)
+text(x=2, y=5, labels='*', font=2, cex=1.7)
 box(lwd=2)
 
 dev.off()

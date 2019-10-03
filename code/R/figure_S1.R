@@ -28,7 +28,7 @@ axis(2, at=c(41.0,41.2,41.4,41.6,41.8,42.0,42.2), labels=c(0,41.2,41.4,41.6,41.8
 mtext('* Derived from biomass reaction flux levels', side=3, cex=0.8, adj=1, padj=-0.5)
 mtext(c('Maximum\nPasimony','LB\nAerobic','M9 + glc\nAerobic','M9 + glc\nAnaerobic'), 
       side=1, at=c(1,2,3,4), padj=1)
-legend('topleft', legend='Unconstrained: ~34.04 minutes', pt.cex=0, cex=0.7, bty='n')
+legend('topleft', legend='Unconstrained iJO1366: ~34.04 minutes', pt.cex=0, cex=0.8, bty='n')
 rect(xleft=0.75, ybottom=0, xright=1.25, ytop=pfba, col='#b2b2b1', lwd=3)
 rect(xleft=1.75, ybottom=0, xright=2.25, ytop=lb, col='chocolate2', lwd=3)
 rect(xleft=2.75, ybottom=0, xright=3.25, ytop=m9_a, col='blue3', lwd=3)
