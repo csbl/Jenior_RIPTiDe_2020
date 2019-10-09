@@ -58,59 +58,59 @@ png(filename='~/Desktop/repos/Jenior_RIPTiDe_2019/results/figures/figure_S2.png'
     units='in', width=9, height=3, res=300)
 
 layout(matrix(c(1,2,3), nrow=1, ncol=3, byrow=TRUE))
-par(mar=c(2.1,5,1,1), xpd=FALSE, las=1, mgp=c(3,0.7,0))
+par(mar=c(2,4,0.5,0.5), xpd=FALSE, las=1, mgp=c(2,0.7,0))
 
 # valine
 stripchart(subset(valine, abx=='clindamycin')[,2], vertical=T, pch=19, 
-           xaxt='n', col='firebrick3', ylim=c(0,3), xlim=c(0.5,2.5), at=1,
+           xaxt='n', col='firebrick3', ylim=c(0,3), xlim=c(0.5,2.5), at=2,
            cex=1.5, ylab='Scaled Intensity (Log10)', method='jitter', jitter=0.15, cex.lab=1.2)
 stripchart(subset(valine, abx=='none')[,2], vertical=T, pch=19, add=TRUE,
-           xaxt='n', yaxt='n', col='blue2', ylim=c(0,3), xlim=c(0.5,2.5), at=2,
+           xaxt='n', yaxt='n', col='blue2', ylim=c(0,3), xlim=c(0.5,2.5), at=1,
            cex=1.5, ylab='Scaled Intensity (Log10)', method='jitter', jitter=0.15, cex.lab=1.2)
 legend('topright', legend='Valine', pt.cex=0, cex=1.1, bty='n')
 legend('topleft', legend=valine_pval, pt.cex=0, bty='n')
 segments(x0=c(0.75,1.75), x1=c(1.25,2.25),
-         y0=c(median(subset(valine, abx=='clindamycin')[,2]),
-              median(subset(valine, abx=='none')[,2])), 
+         y0=c(median(subset(valine, abx=='none')[,2]),
+              median(subset(valine, abx=='clindamycin')[,2])), 
          lwd=3)
-mtext(c('Clindamycin','No Antibiotics'), side=1, at=c(1,2), padj=1)
-mtext('A', side=3, padj=0.5, cex=1.2, font=2, at=-0.1)
-text(x=2, y=2.75, labels='*', font=2, cex=1.7)
+mtext(c('Clindamycin','No Antibiotics'), side=1, at=c(1,2), padj=1, cex=0.8)
+mtext('A', side=3, padj=0.8, cex=1.2, font=2, at=0.1)
+text(x=1, y=2.75, labels='*', font=2, cex=1.7)
 box(lwd=2)
 
 # deoxyuridine
 stripchart(subset(deoxyuridine, abx=='clindamycin')[,2], vertical=T, pch=19, 
-           xaxt='n', col='firebrick3', ylim=c(0,8), xlim=c(0.5,2.5), at=1,
+           xaxt='n', col='firebrick3', ylim=c(0,8), xlim=c(0.5,2.5), at=2,
            cex=1.5, ylab='Scaled Intensity (Log10)', method='jitter', jitter=0.15, cex.lab=1.2)
 stripchart(subset(deoxyuridine, abx=='none')[,2], vertical=T, pch=19, add=TRUE,
-           xaxt='n', yaxt='n', col='blue2', ylim=c(0,8), xlim=c(0.5,2.5), at=2,
+           xaxt='n', yaxt='n', col='blue2', ylim=c(0,8), xlim=c(0.5,2.5), at=1,
            cex=1.5, ylab='Scaled Intensity (Log10)', method='jitter', jitter=0.15, cex.lab=1.2)
 legend('topright', legend='Deoxyuridine', pt.cex=0, cex=1.1, bty='n')
 legend('topleft', legend=deoxyuridine_pval, pt.cex=0, bty='n')
 segments(x0=c(0.75,1.75), x1=c(1.25,2.25),
-         y0=c(median(subset(deoxyuridine, abx=='clindamycin')[,2]),
-              median(subset(deoxyuridine, abx=='none')[,2])), 
+         y0=c(median(subset(deoxyuridine, abx=='none')[,2]),
+              median(subset(deoxyuridine, abx=='clindamycin')[,2])), 
          lwd=3)
-mtext(c('Clindamycin','No Antibiotics'), side=1, at=c(1,2), padj=1)
-mtext('B', side=3, padj=0.5, cex=1.2, font=2, at=-0.1)
-text(x=2, y=7.4, labels='***', font=2, cex=1.7)
+mtext(c('No Antibiotics','Clindamycin'), side=1, at=c(1,2), padj=1, cex=0.8)
+mtext('B', side=3, padj=0.8, cex=1.2, font=2, at=0.1)
+text(x=1, y=7.4, labels='***', font=2, cex=1.7)
 box(lwd=2)
 
 # methionine
 stripchart(subset(methionine, abx=='clindamycin')[,2], vertical=T, pch=19, 
-           xaxt='n', col='firebrick3', ylim=c(0,5.5), xlim=c(0.5,2.5), at=1,
+           xaxt='n', col='firebrick3', ylim=c(0,5.5), xlim=c(0.5,2.5), at=2,
            cex=1.5, ylab='Scaled Intensity (Log10)', method='jitter', jitter=0.15, cex.lab=1.2)
 stripchart(subset(methionine, abx=='none')[,2], vertical=T, pch=19, add=TRUE,
-           xaxt='n', yaxt='n', col='blue2', ylim=c(0,5.5), xlim=c(0.5,2.5), at=2,
+           xaxt='n', yaxt='n', col='blue2', ylim=c(0,5.5), xlim=c(0.5,2.5), at=1,
            cex=1.5, ylab='Scaled Intensity (Log10)', method='jitter', jitter=0.15, cex.lab=1.2)
 legend('topright', legend='Methionine', pt.cex=0, cex=1.1, bty='n')
 legend('topleft', legend=methionine_pval, pt.cex=0, bty='n')
 segments(x0=c(0.75,1.75), x1=c(1.25,2.25),
-         y0=c(median(subset(methionine, abx=='clindamycin')[,2]),
-              median(subset(methionine, abx=='none')[,2])), lwd=3)
-mtext(c('Clindamycin','No Antibiotics'), side=1, at=c(1,2), padj=1)
-mtext('C', side=3, padj=0.5, cex=1.2, font=2, at=-0.1)
-text(x=2, y=5, labels='*', font=2, cex=1.7)
+         y0=c(median(subset(methionine, abx=='none')[,2]),
+              median(subset(methionine, abx=='clindamycin')[,2])), lwd=3)
+mtext(c('No Antibiotics','Clindamycin'), side=1, at=c(1,2), padj=1, cex=0.8)
+mtext('C', side=3, padj=0.8, cex=1.2, font=2, at=0.1)
+text(x=1, y=5, labels='*', font=2, cex=1.7)
 box(lwd=2)
 
 dev.off()
