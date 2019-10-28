@@ -4,10 +4,10 @@ rm(list=ls())
 gc()
 
 # Flux sampling files
-raw_m9 <- '~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/exchanges/raw_m9.iJO1366.exchange_fluxes.tsv'
-objflux <- '~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/exchanges/max.iJO1366.exchange_fluxes.tsv'
-objflux_m9 <- '~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/exchanges/max_m9.iJO1366.exchange_fluxes.tsv'
-riptide <- '~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/exchanges/riptide.iJO1366.exchange_fluxes.tsv'
+raw_m9 <- '~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/exchanges/m9_aerobic/raw_m9a.iJO1366.exchange_fluxes.tsv'
+objflux <- '~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/exchanges/m9_aerobic/max.iJO1366.exchange_fluxes.tsv'
+objflux_m9 <- '~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/exchanges/m9_aerobic/max_m9a.iJO1366.exchange_fluxes.tsv'
+riptide <- '~/Desktop/repos/Jenior_RIPTiDe_2019/data/flux_samples/exchanges/m9_aerobic/riptide.iJO1366.exchange_fluxes.tsv'
 
 # Read in data
 raw_m9 <- read.delim(raw_m9, sep='\t', header=TRUE)

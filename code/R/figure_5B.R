@@ -73,7 +73,7 @@ m9_samples <- rbind(m9_aerobic_samples, m9_anaerobic_samples)
 rich_samples <- rbind(lb_samples, invivo_samples)
 rm(m9_aerobic_samples, lb_samples, m9_anaerobic_samples, invivo_samples)
 
-# NMDS analysis
+# PCoA analysis
 library(vegan)
 library(ape)
 flux_samples <- flux_samples + abs(min(flux_samples))
