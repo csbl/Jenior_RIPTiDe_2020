@@ -55,7 +55,6 @@ coefficients <- c(0.7153049700423447, 0.7153049700423447, 0.7153049700423447, 0.
                   0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 
                   0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 
                   0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 0.04507618536306899, 0.04507618536306899)
-
 flux_medians <- c(12.925909821912455, 552.0385670273639, 0.04009544971415835, 52.11698439251586, 1000.0000000000001, 0.015523064733088177, 285.0050707173017, 1.8775251209898443, 
                   12.531289848944652, 0.12418451786493279, 1000.0, 0.04691724497808991, 685.3789378377319, 658.3643729931538, 9.327273599911223, 1.919639265220953, 361.8025008225915, 
                   30.473794765561934, 6.408032498066518, 10.41082528437394, 0.2872115026400479, 0.04580348248596242, 16.30492600251057, 16.466700004482846, 111.82603967284759, 20.007350966740773, 
@@ -110,15 +109,37 @@ flux_medians <- c(12.925909821912455, 552.0385670273639, 0.04009544971415835, 52
                   1000.0, 182.5429017910767, 3.15, 0.00013922031150748486, 726.8571559805932, 0.09313838839851048, 0.0620922589325631, 0.007761532366542284, 0.2585321184693994, 
                   0.00020883046726122734, 10.410825284373965, 0.5744926154356352, 0.04211414423101417, 0.09362565948878361, 0.0936256594887836, 0.25853211846958857, 0.09313838839851048, 
                   361.79077151134925, 0.03104612946616906, 0.015523064733084563, 673.59826671737)
-
 cor.test(x=coefficients, y=flux_medians, method='spearman')
 
-png(filename='~/Desktop/repos/Jenior_RIPTiDe_2019/results/figures/figure_S3.png', units='in', width=7, height=5, res=300)
+
+png(filename='~/Desktop/repos/Jenior_RIPTiDe_2019/results/figures/figure_S3.png', units='in', width=14, height=5, res=300)
+layout(matrix(c(1,2), nrow=1, ncol=2, byrow=TRUE))
 par(mar=c(4,4,1,1), xpd=FALSE, las=1, mgp=c(2.8,0.7,0))
 plot(x=coefficients, y=flux_medians, xlim=c(0,1), ylim=c(0,1000),
      xlab='Linear Coefficient', ylab='Median Sampled Flux', 
      pch=21, cex=2, bg='firebrick')
 box(lwd=2)
 abline(lm(flux_medians~coefficients), lwd=3)
-legend('center', legend=c('rho=0.261', 'p=1.7e-08'), cex=2, pt.cex=0, bty='n')
+legend('topright', legend=c('R = 0.261', 'p << 0.001'), cex=1.5, pt.cex=0, bty='n')
+mtext('A', side=3, padj=0.2, cex=1.4, font=2, at=-0.15)
+
+runtime <- read.delim('~/Desktop/repos/Jenior_RIPTiDe_2019/data/riptide_runtime.tsv', header=TRUE, row.names=1)
+runtime$reactions <- as.numeric(runtime$reactions)
+runtime$seconds <- as.numeric(runtime$seconds)
+runtime <- runtime[order(runtime$reactions),]
+reactions <- runtime$reactions
+seconds <- runtime$seconds
+fit_times <- lm(seconds ~ poly(reactions, 3, raw=TRUE))
+xx <- data.frame(reactions=seq(0,15000, length=100), 
+                 seconds=seq(0, 3000, length=100))
+
+par(mar=c(4,4,1,1), las=1, mgp=c(2.6,1,0), lwd=2, xpd=FALSE)
+plot(x=reactions, y=seconds, pch=21, bg=as.character(runtime$color), xlab='Reactions', ylab='Seconds', cex=2,
+     xlim=c(0,12000), ylim=c(0,2000), cex.axis=0.8)
+legend('topleft', legend=c('Simplified','Bacteria','Single-cell Eukaryote','Multi-cell Eukaryote'), pch=21,
+       pt.bg=c('chartreuse4','white','blue','chocolate2'), pt.cex=2, cex=1.5)
+lines(xx$reactions, predict(fit_times, xx))
+legend('bottomright', legend=c('R-squared = 0.996','p << 0.001'), pt.cex=0, bty='n', cex=1.5)
+mtext('B', side=3, padj=0.2, cex=1.4, font=2, at=-1700)
+
 dev.off()
