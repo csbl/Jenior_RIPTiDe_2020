@@ -129,17 +129,15 @@ runtime$seconds <- as.numeric(runtime$seconds)
 runtime <- runtime[order(runtime$reactions),]
 reactions <- runtime$reactions
 seconds <- runtime$seconds
-fit_times <- lm(seconds ~ poly(reactions, 3, raw=TRUE))
-xx <- data.frame(reactions=seq(0,15000, length=100), 
-                 seconds=seq(0, 3000, length=100))
+cor.test(x=reactions, y=seconds, method='spearman')
 
 par(mar=c(4,4,1,1), las=1, mgp=c(2.6,1,0), lwd=2, xpd=FALSE)
 plot(x=reactions, y=seconds, pch=21, bg=as.character(runtime$color), xlab='Reactions', ylab='Seconds', cex=2,
-     xlim=c(0,12000), ylim=c(0,2000), cex.axis=0.8)
+     xlim=c(0,12000), ylim=c(0,400), cex.axis=0.8)
 legend('topleft', legend=c('Simplified','Bacteria','Single-cell Eukaryote','Multi-cell Eukaryote'), pch=21,
        pt.bg=c('chartreuse4','white','blue','chocolate2'), pt.cex=2, cex=1.5)
-lines(xx$reactions, predict(fit_times, xx))
-legend('bottomright', legend=c('R-squared = 0.996','p << 0.001'), pt.cex=0, bty='n', cex=1.5)
+abline(lm(seconds~reactions), lwd=3)
+legend('bottomright', legend=c('R = 0.855','p = 0.002'), pt.cex=0, bty='n', cex=1.5)
 mtext('B', side=3, padj=0.2, cex=1.4, font=2, at=-1700)
 
 dev.off()
