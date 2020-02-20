@@ -73,7 +73,7 @@ segments(x0=c(0.75,1.75), x1=c(1.25,2.25),
          y0=c(median(subset(valine, abx=='none')[,2]),
               median(subset(valine, abx=='clindamycin')[,2])), 
          lwd=3)
-mtext(c('Clindamycin','No Antibiotics'), side=1, at=c(1,2), padj=1, cex=0.8)
+mtext(c('No Antibiotics','Clindamycin'), side=1, at=c(1,2), padj=1, cex=0.8)
 mtext('A', side=3, padj=0.8, cex=1.2, font=2, at=0.1)
 text(x=1, y=2.75, labels='*', font=2, cex=1.7)
 box(lwd=2)

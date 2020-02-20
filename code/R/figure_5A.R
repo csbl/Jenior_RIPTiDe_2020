@@ -40,19 +40,3 @@ box(lwd=2)
 dev.off()
 
 
-
-
-par(mar=c(5,6,1,3), las=1, mgp=c(3.5,1,0), xaxs='i', yaxs='i', xpd=FALSE)
-plot(pruning_weight_density, xlim=c(-12,12), ylim=c(0,0.14), main='', xaxt='n', cex.lab=1.7, cex.axis=1.1,
-     xlab='Simulated Metabolite Score', ylab='Score Density') 
-axis(side=1, at=seq(-12,12,4), labels=seq(-12,12,4), cex.axis=1.2, tck=-0.03)
-axis(side=1, at=c(-12:12), tck=-0.015, labels=FALSE)
-polygon(pruning_weight_density, col='white', border='red', lwd=2) 
-abline(v=score_median, lty=2, lwd=2, col='black') # Median
-abline(v=c(lower_95,upper_95), lty=2, lwd=2, col='red') # 0.95 Confidence Interval
-abline(v=7, lwd=2, col='blue') # Measured Score
-legend('topleft', legend=c('Simulated Median','Simulated 95% Confidence Interval','Measured Metabolite Score'), 
-       col=c('black','red','blue'), lty=c(2,2,1), lwd=2, bg='white', cex=1.1)
-
-
-
